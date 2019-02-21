@@ -1,2 +1,2 @@
 # laravel
-Tutorial Laravel and testing
+New laravel

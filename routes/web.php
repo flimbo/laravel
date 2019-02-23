@@ -23,6 +23,11 @@ Route::post('/projects', 'ProjectsController@store');
  */
 
  Route::resource('project', 'ProjectsController');
+  
+ Route::post('/project/{project}/tasks', 'ProjectTasksController@store');
+
+ Route::patch('/tasks/{task}', 'ProjectTasksController@update');
+
  
 /* Route::get('/', function () {
     

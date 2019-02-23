@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use App\Flimbo;
 
 class ProjectsController extends Controller
 {
@@ -56,7 +57,14 @@ class ProjectsController extends Controller
 
     public function show(Project $project)
     {
-        return $project;
+        
+        //return $project;
+        $flimbo = new Flimbo();
+        $flimbo->Ahoj();
+
+        dd("tested");
+
+        return view('projects.show', compact('project'));
         
         # code...
     }

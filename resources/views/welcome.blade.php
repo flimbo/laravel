@@ -2,19 +2,14 @@
 
 @section('content')
 
-<h1>Welcome</h1>
+<h1>Welcom in projects</h1>
+<p>Totto je zoznam projectov</p>
 
-
-@foreach ($task as $item)
-    {{$item}}<br>
-@endforeach
 
 @foreach ($projects as $p)
   
-    Title: {{$p->title}} alebo {{$p['title']}}<br>
+    #{{$p->id}} <a href='project/{{$p->id}}'>{{$p->title}}</a><br>
 @endforeach
-
-
 
 
 
